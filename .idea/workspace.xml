@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8167210-d61d-433f-b65a-7bcd7955d709" name="Changes" comment="" />
+    <list default="true" id="f8167210-d61d-433f-b65a-7bcd7955d709" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/airbnb-clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/airbnb-clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0002_auto_20220705_1739.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0003_auto_20220705_1825.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0004_auto_20220705_1828.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BVdPYm6ua8nUN5XcZfUvmFeezT" />
   <component name="ProjectViewState">
@@ -19,7 +35,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/crid2/airbnb-clone"
+    "last_opened_file_path": "C:/Users/crid2/airbnb-clone",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
