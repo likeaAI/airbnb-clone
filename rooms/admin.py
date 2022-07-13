@@ -61,14 +61,14 @@ class RoomAdmin(admin.ModelAdmin) :
     filter_horizontal = ("amenities", "facilities", "house_rules")
 
     def count_amenities(self, obj) : 
-        print(obj)
-        return "Potato"
+        return obj.amenities.count()
+        
 
     count_amenities.short_description = "hello sexy!"
 
 
 
 
-# @admin.register(models.Photo)
-# class PhotoAdmin(admin.ModelAdmin):
-#     pass
+@admin.register(models.Photo)
+class PhotoAdmin(admin.ModelAdmin):
+    pass
