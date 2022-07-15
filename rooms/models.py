@@ -1,6 +1,4 @@
 
-
-
 from django.db import models
 from django_countries.fields import CountryField
 from core import models as core_models
@@ -20,14 +18,11 @@ class AbstractItem(core_models.TimeStampedModel) :
         return self.name
 
 
-
 class RoomType(AbstractItem) : 
     class meta:
 
         verbose_name_plural = "Room Types"
         
-
-
 
 class Amenity(AbstractItem) : 
     
@@ -64,7 +59,7 @@ class Photo(core_models.TimeStampedModel):
 
     caption = models.CharField(max_length=80)
     file = models.ImageField()
-    room = models.ForeignKey("Room", on_delete=models.CASCADE)
+    room = models.ForeignKey("Room", related_name="photos", on_delete=models.CASCADE)
 
     def __str__(self):
         return self.caption

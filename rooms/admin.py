@@ -4,8 +4,14 @@ from . import models
 
 # Register your models here.
 @admin.register(models.RoomType, models.Facility, models.Amenity, models.HouseRule)
-class ItemAdmin(admin.ModelAdmin) : 
-    pass
+class ItemAdmin(admin.ModelAdmin) :
+
+    list_display = (
+        "name" , "used_by"
+    )
+
+    def used_by(self, obj) : 
+        return obj.rooms.count()
 
 @admin.register(models.Room)
 class RoomAdmin(admin.ModelAdmin) :
@@ -43,6 +49,7 @@ class RoomAdmin(admin.ModelAdmin) :
         "check_out",
         "instant_book",
         "count_amenities",
+        "count_photos",
     )    
    
 
@@ -64,8 +71,8 @@ class RoomAdmin(admin.ModelAdmin) :
         return obj.amenities.count()
         
 
-    count_amenities.short_description = "hello sexy!"
-
+    def count_photos(self,obj) : 
+        return obj.photos.count()
 
 
 
