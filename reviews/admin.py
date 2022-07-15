@@ -8,6 +8,4 @@ from . import models
 
 @admin.register(models.Reviews)
 class ReviewAdmin(admin.ModelAdmin) : 
-    
-    
-    pass
+    list_display = ("__str__", "rating_average")
