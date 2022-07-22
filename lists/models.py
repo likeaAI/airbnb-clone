@@ -13,10 +13,16 @@ class List(core_models.TimeStampedModel) :
     )
     rooms = models.ManyToManyField("rooms.Room", related_name="lists", blank=True)
 
-
-
     def __str__(self) : 
         return self.name
+
+
+    def count_rooms(self) : 
+        return self.rooms.count()
+
+    # count room django 어드민 이름을 바꿔줌 
+    count_rooms.short_description = "Number of Rooms"
+
 
 
 
