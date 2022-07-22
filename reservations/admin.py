@@ -11,3 +11,15 @@ class ReservationAdmin(admin.ModelAdmin) :
     pass
 
 
+    list_display = (
+        'room',
+        'status',
+        'check_in',
+        'check_out',
+        'guest',
+        'in_progress',
+        'is_finished',
+
+    )
+
+  

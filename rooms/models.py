@@ -97,10 +97,24 @@ class Room(models.Model) :
     def __str__(self) : 
         return self.name
 
-    def total_rating(self) : 
+ 
+
+    # def total_rating(self) : 
+    #     all_reviews = self.reviews.all()
+    #     all_ratings = [] 
+    #     for review in all_reviews :
+    #         all_ratings.append(review.rating_average())
+    #     return all_ratings / len(all_reviews)
+
+
+    def total_rating(self):
         all_reviews = self.reviews.all()
-        all_ratings = [] 
-        for review in all_reviews :
-            all_ratings.append(review.rating_average())
-        return 0
-    
+        all_ratings = 0
+        for review in all_reviews:
+            all_ratings += review.rating_average()
+
+        if len(all_reviews) > 0 :         
+            return all_ratings / len(all_reviews)   
+        else:
+            return 0
+            
